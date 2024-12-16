@@ -3,8 +3,13 @@ import logo from '../assets/logo.png'
 
 export const LoginUser = () => {
   return (
-    <div className="w-[100wv] min-h-[100svh] bg-[#952124] ">
-        <div className="bg-[#952124] flex h-[20vh] md:h-[10vh] w-100 justify-center items-center gap-2 md:gap-10">
+    <div className="w-[100wv] min-h-[100svh]"
+    style={{
+        boxShadow: '17px 20px 40px rgba(0, 0, 0, 0.65)',
+        background: 'rgba(149, 33, 36, 1)',
+        backdropFilter: 'blur(15px)'
+      }}>
+        <div className="flex h-[20vh] md:h-[10vh] w-100 justify-center items-center gap-2 md:gap-10">
                 <NavLink to="/">
                     <picture className='w-1/4 md:w-1/6'>
                         {/* Imagen para pantallas grandes */}
