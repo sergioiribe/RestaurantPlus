@@ -1,5 +1,6 @@
 import fondo from '../assets/fondoLogin1.png'
 import Login from '../components/LoginText'
+import LoginNumber from '../components/LoginNumber'
 
 const LoginAdmin = () => {
   return (
@@ -20,20 +21,24 @@ const LoginAdmin = () => {
           }}
         >
           <div className="flex items-center gap-3">
-            <p className="text-white">A WISE QUOTE</p>
+            <p className="text-white">UNA FRASE SABIA</p>
             <div className="w-32 h-[1px] bg-white"></div>
           </div>
-          <div className="pr-[35%] flex flex-col gap-3">
-            <p className="font-medium text-white text-7xl">
-              Get Everything You Want
-            </p>
-            <p className="text-sm text-white">
-              You can get everything you want if you work hard, trust the
-              process, and stick yo the plan
+          <div className="flex flex-col gap-3 ">
+            <div className="flex flex-col">
+              <p className="font-medium text-white text-7xl ">Sé el</p>
+              <p className="font-medium text-white text-7xl ">que todo lo </p>
+              <p className="font-medium text-white text-7xl ">conquista</p>
+            </div>
+
+            <p className="text-sm text-white pr-[35%]">
+              Puedes lograrlo si trabajas duro, confías en el proceso y te
+              mantienes fiel al plan.
             </p>
           </div>
         </div>
-        <Login />
+
+        <LoginNumber />
       </div>
     </div>
   )

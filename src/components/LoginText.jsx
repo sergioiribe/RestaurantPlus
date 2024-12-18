@@ -15,9 +15,9 @@ const LoginText = () => {
       </p>
       <div className="flex flex-col gap-10">
         <div>
-          <p className="mb-2 text-5xl text-center">Welcome Back</p>
+          <p className="mb-2 text-5xl text-center">Bienvenido</p>
           <p className="text-[#818181] text-center text-sm">
-            Enter your email and password to access your account
+            Ingresa tu correo y contraseña para acceder a tu cuenta
           </p>
         </div>
         <div>
@@ -27,7 +27,7 @@ const LoginText = () => {
             className="bg-[#f5f7fa] w-full rounded-lg p-3 mb-5 text-xs focus:outline-none"
             placeholder="Enter your email"
           />
-          <p className="mb-2 text-sm text-start">Password</p>
+          <p className="mb-2 text-sm text-start">Contraseña</p>
           <input
             type="password"
             className="bg-[#f5f7fa] w-full rounded-lg p-3 mb-5 text-xs focus:outline-none"
@@ -36,19 +36,19 @@ const LoginText = () => {
           <div className="flex items-center justify-between">
             <div className="flex">
               <input type="checkbox" className="mr-2" />
-              <p className="text-sm">Remember me</p>
+              <p className="text-sm">Recuerdame</p>
             </div>
 
-            <p className="text-sm">Forgot password?</p>
+            <p className="text-sm">Olvidaste tu contraseña?</p>
           </div>
         </div>
         <div className="w-full p-2 bg-black rounded-lg">
-          <p className="w-full font-medium text-center text-white">Sign In</p>
+          <p className="w-full font-medium text-center text-white">Ingresar</p>
         </div>
       </div>
       <p className="text-sm text-[#818181]">
-        Dont have an account?{' '}
-        <span className="font-medium text-black">Sign Up</span>
+        ¿No tienes una cuenta?{' '}
+        <span className="font-medium text-black">Regístrate</span>
       </p>
     </div>
   )

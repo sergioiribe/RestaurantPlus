@@ -6,10 +6,7 @@ const DashboardAdmin = () => {
         position: 'absolute',
         top: 0,
         left: 0,
-        width: '100%',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundImage: `url('https://www.icloud.com/system/icloud.com/current/wallpaper.svg')`
+        width: '100%'
       }}
     >
       {/* Overlay for gradient */}
@@ -22,7 +19,7 @@ const DashboardAdmin = () => {
           width: '100%',
           height: '100%',
           backgroundImage: `
-            linear-gradient(64deg, #5ba0ff, #1a8eff 46%, #2d7eeb)
+            linear-gradient(64deg, #ffffff, #ffffff 46%, #ffffff)
           `,
           mixBlendMode: 'hard-light', // Use 'overlay' or 'multiply' for better color blending
           pointerEvents: 'none',
@@ -30,12 +27,14 @@ const DashboardAdmin = () => {
         }}
       ></div>
       <div className="z-10 flex flex-col w-full h-screen gap-16 py-16 px-52">
-        <div className="flex justify-between">
-          <p className="text-5xl text-white">Restaurant+</p>
+        <div className="flex justify-between px-5">
+          <p className="text-5xl font-semibold ">
+            Hola, <span className="text-blue-900">Luis</span>
+          </p>
           <div className="flex items-center gap-2">
             <div className="text-end">
-              <p className="text-3xl text-white">Olivia</p>
-              <p className="text-lg text-white">Jueves</p>
+              <p className="text-xl ">Olivia</p>
+              <p className="text-sm ">Jueves</p>
             </div>
             <div
               className="bg-red-700 rounded-xl w-14 h-14"
@@ -48,18 +47,18 @@ const DashboardAdmin = () => {
           </div>
         </div>
         <div
-          className="relative grid w-[100%] h-full gap-3"
+          className="relative grid w-[100%] h-full gap-3 p-5"
           style={{
             gridTemplateColumns: 'repeat(12, minmax(0, 1fr))',
             gridTemplateRows: 'repeat(6, minmax(0, 1fr))' // Cambia 15 a 20 para 20 columnas
           }}
         >
-          <div className="col-span-4 row-span-2 bg-[#68def6] rounded-xl p-5">
+          <div className="col-span-4 row-span-2 bg-[#68def6] rounded-xl p-5 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300">
             <p className="text-2xl text-white">Emma Roberts</p>
             <p className="text-white ">Mr. weaklo drive</p>
             <p className="text-white ">Grant faek lopekr</p>
           </div>
-          <div className="flex col-span-4 row-span-2 p-5 bg-purple-700 rounded-xl">
+          <div className="flex col-span-4 row-span-2 p-5 bg-purple-700 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <div className="flex flex-col justify-between">
               <div>
                 <p className="text-white">Reunion de distribucion</p>
@@ -87,14 +86,14 @@ const DashboardAdmin = () => {
             </div>
           </div>
           <div
-            className="col-span-2 row-span-2 rounded-xl bg-amber-300"
+            className="col-span-2 row-span-2 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl bg-amber-300"
             style={{
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundImage: `url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufG72UeXKbPoVKOkhdnbWNykS3zZFf5OWwA&s")`
             }}
           ></div>
-          <div className="flex items-center justify-center col-span-1 row-span-1 rounded-xl bg-rose-700">
+          <div className="flex items-center justify-center col-span-1 row-span-1 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl bg-rose-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -110,7 +109,7 @@ const DashboardAdmin = () => {
               />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-1 row-span-1 bg-orange-600 rounded-xl">
+          <div className="flex items-center justify-center col-span-1 row-span-1 bg-orange-600 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -126,7 +125,7 @@ const DashboardAdmin = () => {
               />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-1 row-span-1 bg-green-700 rounded-xl">
+          <div className="flex items-center justify-center col-span-1 row-span-1 bg-green-700 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -142,7 +141,7 @@ const DashboardAdmin = () => {
               />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-1 row-span-1 bg-purple-900 rounded-xl">
+          <div className="flex items-center justify-center col-span-1 row-span-1 bg-purple-900 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -158,7 +157,7 @@ const DashboardAdmin = () => {
               />
             </svg>
           </div>
-          <div className="flex col-span-4 row-span-2 bg-red-600 rounded-xl">
+          <div className="flex col-span-4 row-span-2 bg-red-600 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <div
               className="w-1/2 h-full rounded-tl-xl rounded-bl-xl"
               style={{
@@ -203,14 +202,14 @@ const DashboardAdmin = () => {
             </div>
           </div>
           <div
-            className="col-span-4 row-span-4 bg-blue-500 rounded-xl"
+            className="col-span-4 row-span-4 bg-blue-500 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl"
             style={{
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundImage: `url("https://descubre-nueva-app.clima.com/images/widget.png")`
             }}
           ></div>
-          <div className="flex items-center justify-center col-span-2 row-span-2 bg-blue-700 rounded-xl">
+          <div className="flex items-center justify-center col-span-2 row-span-2 bg-blue-700 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="64"
@@ -224,7 +223,7 @@ const DashboardAdmin = () => {
               <path d="M10.228 15.667a5 5 0 0 0 .303-.086l.082-.025a8.02 8.02 0 0 0 4.162-3.3.25.25 0 0 0-.331-.35q-.322.168-.663.294a6.4 6.4 0 0 1-2.243.4c-2.957 0-5.532-2.031-5.532-4.644q.003-.203.046-.399a4.54 4.54 0 0 0-.46 5.898l.003.005c.315.441.707.821 1.158 1.121h.003l.144.09c.877.55 1.721 1.078 3.328.996" />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-2 row-span-2 bg-orange-600 rounded-xl">
+          <div className="flex items-center justify-center col-span-2 row-span-2 bg-orange-600 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -238,7 +237,7 @@ const DashboardAdmin = () => {
               />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-2 row-span-2 bg-blue-900 rounded-xl">
+          <div className="flex items-center justify-center col-span-2 row-span-2 bg-blue-900 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -252,7 +251,7 @@ const DashboardAdmin = () => {
               />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-1 row-span-1 bg-green-700 rounded-xl">
+          <div className="flex items-center justify-center col-span-1 row-span-1 bg-green-700 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -264,7 +263,7 @@ const DashboardAdmin = () => {
               <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z" />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-1 row-span-1 bg-blue-400 rounded-xl">
+          <div className="flex items-center justify-center col-span-1 row-span-1 bg-blue-400 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -276,7 +275,7 @@ const DashboardAdmin = () => {
               <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.884 6.68 8 9.219l2.116-2.54a.5.5 0 1 1 .768.641L8.651 10l2.233 2.68a.5.5 0 0 1-.768.64L8 10.781l-2.116 2.54a.5.5 0 0 1-.768-.641L7.349 10 5.116 7.32a.5.5 0 1 1 .768-.64" />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-4 row-span-2 bg-green-600 rounded-xl">
+          <div className="flex items-center justify-center col-span-4 row-span-2 bg-green-600 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="64"
@@ -288,7 +287,7 @@ const DashboardAdmin = () => {
               <path d="M6.555 1.375 0 2.237v5.45h6.555zM0 13.795l6.555.933V8.313H0zm7.278-5.4.026 6.378L16 16V8.395zM16 0 7.33 1.244v6.414H16z" />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-1 row-span-1 bg-orange-600 rounded-xl">
+          <div className="flex items-center justify-center col-span-1 row-span-1 bg-orange-600 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -301,7 +300,7 @@ const DashboardAdmin = () => {
               <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5 6h6a.5.5 0 0 1 .496.438l.5 4A.5.5 0 0 1 11.5 11h-3v2.016c.863.055 1.5.251 1.5.484 0 .276-.895.5-2 .5s-2-.224-2-.5c0-.233.637-.429 1.5-.484V11h-3a.5.5 0 0 1-.496-.562l.5-4A.5.5 0 0 1 5 6" />
             </svg>
           </div>
-          <div className="flex items-center justify-center col-span-1 row-span-1 bg-purple-500 rounded-xl">
+          <div className="flex items-center justify-center col-span-1 row-span-1 bg-purple-500 shadow-xl hover:shadow-[0px_20px_30px_rgba(0,0,0,0.3)] transition-shadow duration-300 rounded-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
