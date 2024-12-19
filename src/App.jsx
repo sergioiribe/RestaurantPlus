@@ -1,7 +1,15 @@
+import { Routes, Route, Navigate } from 'react-router-dom'
+import { LoginUser } from './routes/LoginUser'
+import DashboardAdmin from './pages/DashboardAdmin'
+import LoginAdmin from './pages/LoginAdmin'
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-red-500">
-      Hello world!
-    </h1>
+    <Routes>
+      <Route path="/loginUser" element={<LoginUser />} />
+      <Route path="/loginAdmin" element={<LoginAdmin />} />
+      <Route path="/" element={<DashboardAdmin />}></Route>
+      <Route path="/*" element={<Navigate to="/" />}></Route>
+    </Routes>
   )
 }
