@@ -1,41 +1,36 @@
 import fondo from '../assets/fondoLogin1.png'
 import Login from '../components/LoginText'
 import LoginNumber from '../components/LoginNumber'
+import sushi from '../assets/sushi.jpg';
+import logosushi from '../assets/logosushi2.jpeg';
+
+
 
 const LoginAdmin = () => {
   return (
     <div
-      className="rotate-[360deg] bg-white"
+      className=" bg-white"
       style={{
         width: '100vw',
         height: '100vh'
       }}
     >
-      <div className="flex w-full h-full p-5 px-28">
+      <div className="flex w-full h-full p-5 pr-28 pl-48">
         <div
-          className="flex flex-col justify-between w-1/2 h-full p-10 border rounded-3xl"
+          className="flex flex-col justify-end items-start w-1/2 h-full border rounded-3xl p-4"
           style={{
-            backgroundPosition: 'center',
+            backgroundPosition: 'left',
             backgroundSize: 'cover',
-            backgroundImage: `url(${fondo})`
+            backgroundImage: `url(${sushi})`
           }}
         >
-          <div className="flex items-center gap-3">
-            <p className="text-white">UNA FRASE SABIA</p>
-            <div className="w-32 h-[1px] bg-white"></div>
+          <div className='flex  justify-center items-center w-full '>
+            <p className='font-black text-2xl text-black/80 pr-5 ' style={{
+            }}>SUSHI FACTORY</p>
+            <div className='w-[21rem] h-[5px] bg-black/80 rounded-full mt-[3px]'></div>
           </div>
-          <div className="flex flex-col gap-3 ">
-            <div className="flex flex-col">
-              <p className="font-medium text-white text-7xl ">Sé el</p>
-              <p className="font-medium text-white text-7xl ">que todo lo </p>
-              <p className="font-medium text-white text-7xl ">conquista</p>
-            </div>
 
-            <p className="text-sm text-white pr-[35%]">
-              Puedes lograrlo si trabajas duro, confías en el proceso y te
-              mantienes fiel al plan.
-            </p>
-          </div>
+
         </div>
 
         <LoginNumber />
